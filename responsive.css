@@ -1,0 +1,166 @@
+@media only screen and (min-width:500px) {
+    .nav_left>div>i {
+        display: none;
+    }
+
+    .nav_left>i {
+        display: none;
+    }
+
+    .home-icon {
+        display: none;
+    }
+
+    .root-menu {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .nav {
+        padding: 0 5px;
+    }
+
+    .nav_right>img {
+        width: 30px;
+    }
+
+    .nav_right>h1 {
+        font-size: 17px;
+    }
+
+    .anchorTag>div>a:nth-child(1) {
+        display: none;
+    }
+
+    .nav_left i {
+        margin: 0 5px;
+    }
+
+    .nav-btn2 {
+        display: none;
+    }
+
+    .nav-btn1 {
+        padding: 8px 15px;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    .hometag {
+        display: none;
+    }
+
+    #subjects {
+        padding: 0 27px 0 7px;
+    }
+
+    #home_right {
+        padding: 0 5px;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 10vh;
+        justify-content: end;
+    }
+
+    #home_left {
+        overflow: auto;
+    }
+
+    #home_left>img {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    #home_right h1:nth-child(2) {
+        font-size: 5vw;
+    }
+
+    #home_right h1:nth-child(1) {
+        font-size: 7vw;
+
+    }
+
+    p {
+        padding: 0 10px 0 0;
+    }
+
+    .home-btn {
+        padding: 8px 15px;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+}
+
+
+/* Responsive code for tutorial */
+@media only screen and (max-width:480px) {
+    .root-menu {
+        display: block;
+        position: fixed;
+        left: 50%;
+        top: 13%;
+        transform: translate(-50%, -50%);
+        z-index: 200;
+        user-select: none;
+    }
+
+    .menu {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: moving-menu 1s infinite alternate;
+    }
+
+    @keyframes moving-menu {
+        0% {
+            transform: translateY(-10%);
+        }
+
+        100% {
+            transform: translateY(10%);
+        }
+    }
+
+    .menu>i {
+        font-size: 32px;
+    }
+
+    .sideContainer {
+        display: none;
+        top: 64px;
+        width: 100vw;
+        background-color: rgb(199, 241, 241);
+        z-index: 100;
+    }
+
+    .mainContentContainer {
+        width: 100vw;
+        z-index: 10;
+        padding:10px 0px 20px 10px;   
+        padding-right:11px;
+    }
+    .nav{
+        padding:0px 5px;
+    }
+
+}
+
+@media only screen and (min-width:900px) {
+    .sideContainer {
+        width: 22vw;
+    }
+    .mainContentContainer {
+        width: 75vw;
+    }
+    .nav{
+        padding:0 30px;
+    }
+}

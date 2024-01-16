@@ -1,0 +1,98 @@
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(135deg, rgba(2, 0, 36, 1) 0%, rgba(9, 95, 121, 0.226) 0%, rgba(0, 212, 255, 0.3113620448179272) 100%);
+}
+.wrapper{
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 65px);
+}
+.container
+{
+    width:30vw;
+    background-color: white;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container>h1{
+    margin:15px 0 10px 0;
+}
+form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container>form input{
+    border:1px solid rgba(128, 128, 128, 0.637);
+    padding:10px;
+    border-radius: 7px;
+    width:20vw;
+    margin:7px 0;
+    outline:none;
+}
+
+
+.bn632-hover {
+    width: 120px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 5px 0;
+    height: 45px;
+    align-self: center;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn26 {
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #4481eb,
+      #04befe,
+      #3f86ed
+    );
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  }
+  
+  .container>span{
+    margin-bottom: 20px;
+  }
+  .container>span>a{
+    color:blue;
+  }
+
+
+  @media only screen and (max-width:480px) {
+    .container{
+      width:90vw;
+    } 
+    .container>form input{
+      width:80vw;
+    }
+  }

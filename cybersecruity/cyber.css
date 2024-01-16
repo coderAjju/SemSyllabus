@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.CyberSecurity,.PythonTutorial {
+    width: 100vw;
+    position: relative;
+}
+.sideContainer {
+    position: fixed;
+    top:64px;
+    height:calc(100vh - 65px);
+    user-select: none;
+    overflow: auto;
+}
+
+.sideContainerRoot {
+    position: relative;
+}
+
+.sideContainerRoot>h1 {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    border-top: 1px solid rgba(128, 128, 128, 0.5);
+}
+
+.expandable-div {
+    padding:0 10px;
+}
+.expandable-div>ul{
+    padding:10px 30px;
+}
+.expandable-div>ul>li{
+    padding:10px 0;
+}
+.hover-trigger i{
+    transition: all 0.5s linear;
+}
+
+
+.mainContentContainer{
+    position: absolute;
+    right:0;
+    top:70px;
+}
