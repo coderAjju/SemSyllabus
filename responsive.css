@@ -151,6 +151,13 @@
     .nav{
         padding:0px 5px;
     }
+    .mainContentContainer p{
+        margin:7px 10px 7px 10px;
+        font-size: 18px;
+    }
+    .mainContentContainer h1{
+        font-size: 29px;
+    }
 
 }
 
@@ -159,9 +166,16 @@
         width: 22vw;
     }
     .mainContentContainer {
-        width: 75vw;
+        width: 77vw;
     }
     .nav{
         padding:0 30px;
+    }
+    .mainContentContainer p{
+        margin:7px 15px 7px 10px;
+        font-size: 18px;
+    }
+    .mainContentContainer h1{
+        font-size: 29px;
     }
 }
