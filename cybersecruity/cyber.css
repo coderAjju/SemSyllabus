@@ -19,7 +19,7 @@
     position: relative;
 }
 
-.sideContainerRoot>h1 {
+.sideContainerRoot>h1{
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -48,3 +48,6 @@
     top:70px;
 }
 
+.mainContentContainer h2{
+    padding-left: 10px;
+}

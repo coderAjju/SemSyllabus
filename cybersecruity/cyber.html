@@ -56,14 +56,25 @@
                     </ul>
                 </div>
             </div>
-
             <div class="sideContainerRoot">
-                <h1 class="hover-trigger"><span>vulnerability-</span><i class="fa-solid fa-chevron-down"></i></h1>
+                <h1 class="hover-trigger"><span>Threats to information system</span><i
+                        class="fa-solid fa-chevron-down"></i></h1>
                 <div class="expandable-div">
                     <ul>
-                        <li><a href="#">Overview</a></li>
-                        <li><a href="#">Malware</a></li>
-                        <li><a href="#">Type of malware</a></li>
+                        <li><a href="#" data-target="Externalthreats">External threats</a></li>
+                        <li><a href="#" data-target="Internalthreats">Internal threats</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sideContainerRoot">
+                <h1 class="hover-trigger"><span>security threat and
+                        vulnerability</span><i class="fa-solid fa-chevron-down"></i></h1>
+                <div class="expandable-div">
+                    <ul>
+                        <li><a href="#" data-target="securitythreat">Overview of security threat</a></li>
+                        <li><a href="#" data-target="vulnerability">Overview of vulnerability</a></li>
+                        <li><a href="#" data-target="malware">Malware</a></li>
+                        <li><a href="#" data-target="typeofmalware">Type of malware</a></li>
                     </ul>
                 </div>
             </div>
@@ -137,17 +148,119 @@
                         Yeh ek barrier create karta hai internet aur internal network ke beech mein.</p>
                     <p><b>4. Antivirus Software:</b> Yeh software malware aur viruses ko detect aur remove karta hai.
                         Isse computer ya network ko infected hone se bachaya ja sakta hai.</p>
-                    <p><b>5.Security Policies:</b> Har organization ki apni security policies hoti hain, jisme define hota hai ki employees ko kis tarah se data ko handle karna chahiye aur kya-kya security measures follow karni chahiye.</p>
+                    <p><b>5.Security Policies:</b> Har organization ki apni security policies hoti hain, jisme define
+                        hota hai ki employees ko kis tarah se data ko handle karna chahiye aur kya-kya security measures
+                        follow karni chahiye.</p>
                 </div>
                 <h1 id="desktop_security">Desktop Security</h1>
                 <div>
-                    <p>Desktop security yeh hota hai ki hum apne individual computer systems ko secure rakhein, khaaskar ki kisi organization ya business environment mein. Niche kuch key aspects hain desktop security ke:</p>
-                    <p><b>1. Antivirus Software:</b> Antivirus software install karna aur regular updates karna bahut zaroori hai. Isse hum malicious software jaise viruses, malware, aur spyware ko detect aur remove kar sakte hain.</p>
-                    <p><b>2. Firewalls:</b> Firewalls ek barrier ka kaam karte hain aapke computer aur internet ke beech mein. Inka use incoming aur outgoing network traffic ko monitor aur control karne mein hota hai, unauthorized access ko rokne mein madad karte hain.</p>
-                    <p><b>3. perating System Updates:</b>O Operating system ko regular basis par update karna bahut important hai. Updates mein often vulnerabilities ke liye patches shamil hote hain, jo system ko potential threats ke khilaf majboot banate hain.</p>
-                    <p><b>4. Encryption:</b> Sensitive data ko protect karne ke liye encryption ka use karna jaruri hai. Isse ye ensure hota hai ki agar unauthorized access hota hai, toh data proper decryption key ke bina unreadable rahega.</p>
-                    <p><b>5. Backup and Recovery:</b> Important data ko regular basis par backup karna, taki hardware failure, chori ya kisi aur anjaane ghatna ke case mein data loss na ho. Reliable backup and recovery strategy desktop security ke liye crucial hai.</p>
-                    <p><b>6. Remote Desktop Security:</b> Agar remote desktop access ki zarurat hai, toh secure methods ka use karna, jaise ki Virtual Private Network (VPN) connections aur two-factor authentication, taki secure remote access ho sake.</p>
+                    <p>Desktop security yeh hota hai ki hum apne individual computer systems ko secure rakhein, khaaskar
+                        ki kisi organization ya business environment mein. Niche kuch key aspects hain desktop security
+                        ke:</p>
+                    <p><b>1. Antivirus Software:</b> Antivirus software install karna aur regular updates karna bahut
+                        zaroori hai. Isse hum malicious software jaise viruses, malware, aur spyware ko detect aur
+                        remove kar sakte hain.</p>
+                    <p><b>2. Firewalls:</b> Firewalls ek barrier ka kaam karte hain aapke computer aur internet ke beech
+                        mein. Inka use incoming aur outgoing network traffic ko monitor aur control karne mein hota hai,
+                        unauthorized access ko rokne mein madad karte hain.</p>
+                    <p><b>3. perating System Updates:</b> Operating system ko regular basis par update karna bahut
+                        important hai. Updates mein often vulnerabilities ke liye patches shamil hote hain, jo system ko
+                        potential threats ke khilaf majboot banate hain.</p>
+                    <p><b>4. Encryption:</b> Sensitive data ko protect karne ke liye encryption ka use karna jaruri hai.
+                        Isse ye ensure hota hai ki agar unauthorized access hota hai, toh data proper decryption key ke
+                        bina unreadable rahega.</p>
+                    <p><b>5. Backup and Recovery:</b> Important data ko regular basis par backup karna, taki hardware
+                        failure, chori ya kisi aur anjaane ghatna ke case mein data loss na ho. Reliable backup and
+                        recovery strategy desktop security ke liye crucial hai.</p>
+                    <p><b>6. Remote Desktop Security:</b> Agar remote desktop access ki zarurat hai, toh secure methods
+                        ka use karna, jaise ki Virtual Private Network (VPN) connections aur two-factor authentication,
+                        taki secure remote access ho sake.</p>
+                </div>
+                <h1>Threats to information security</h1>
+                <p>information systems ko kai tarah ke threats se face karna padta hai, aur ye mainly do types ke hote
+                    hain - external threats aur internal threats.</p>
+                <h1 id="Externalthreats">External threats</h1>
+                <div>
+
+                    <p><b>1. Malware:</b> Virus, worms, trojans, aur ransomware jaise malware ka hona ek major external
+                        threat hai. Ye systems mein enter hokar data ko damage kar sakte hain.</p>
+                    <p><b>2. Man-in-the-Middle Attacks:</b> Isme attackers user aur server ke beech mein aakar
+                        communication ko intercept karte hain, jisse woh sensitive information ko access kar sakte hain.
+                    </p>
+                    <p><b>3. Social Engineering Attacks:</b> Ye attacks logon ke emotions aur psychology ka istemal karte
+                        hain. Phishing, baiting, aur pretexting isme shamil hote hain, jisse hackers users se sensitive
+                        information nikal lete hain.</p>
+                    <p><b>4. DNS Spoofing:</b> Isme attackers DNS (Domain Name System) ko manipulate karte hain, jisse
+                        users galat websites par redirect ho jaate hain aur unka sensitive data leak ho sakta hai.</p>
+                    <p><b>5. Ransomware:</b> Ye ek prakar ka malware hai jo user ke data ko encrypt karke use access nahi
+                        karne deta hai, aur fir hackers ransom maangte hain data ko decrypt karne ke liye.
+                    </p>
+                    <p><b>6. Hacking:</b> Unauthorized access pane ke liye hackers system mein loopholes dhundhte hain
+                        aur unka istemal karke sensitive data ko access karne ki koshish karte hain.</p>
+                </div>
+                <h1 id="Internalthreats">Internal threats</h1>
+                <div>
+                    <p><b>1. Unintentional Errors:</b> Kuch baar employees ya users apni galti se kisi sensitive
+                        information ko galat jagah save kar dete hain, ya fir koi important file delete ho jati hai. Yeh
+                        unintentional errors bhi ek internal threat create kar sakte hain.</p>
+                    <p><b>2. Weak Passwords:</b> Agar employees weak passwords ka istemal karte hain, toh unke accounts
+                        aasani se compromise ho sakte hain. Isse confidential data ka unauthorized access ho sakta hai.
+                    </p>
+                    <p><b>3. Outdated Security Policies:</b> Agar organization ke andar security policies purani ya fir
+                        poorly enforced hoti hain, toh employees ko pata nahi chalta ki unhe kaise apne data ko secure
+                        rakhna chahiye.</p>
+                    <p><b> 4.Social Engineering Attacks:</b> Kuch hackers employees ko emotionally manipulate karke ya
+                        unse faux(something is not genuine or real, but is made to look rea) trust build karke sensitive
+                        information nikal lete hain. Isse social engineering attacks hota hai.</p>
+                </div>
+                <h1 id="securitythreat">Overview of Security threats</h1>
+                <div>
+                    <p>Security threats woh khatre hote hain jo hamare computer systems, networks, aur data ko nuksan
+                        pahuncha sakte hain. Yeh khatre aane wale danger ya risk ko represent karte hain, jisse humara
+                        sensitive information ya systems compromise ho sakta hai. Kuch common security threats hain</p>
+                    <p><b>1. Malware:</b> Yeh hota hai dushit software jaise viruses, worms, trojans, aur ransomware, jo
+                        hamare systems mein enter karke data ko nuksan pahuncha sakte hain.</p>
+
+                    <p><b>2. Phishing:</b> Isme attackers fake emails, messages, ya websites ka istemal karke users se
+                        sensitive information nikalne ki koshish karte hain.</p>
+                    <p><b>3. Denial of Service (DoS) Attacks:</b> Isme attackers system ko overload karke legitimate
+                        users ko access karne mein rokte hain.</p>
+
+                    <p><b>4. Hacking:</b> Unauthorized access gain karke sensitive data ko exploit karne ki koshish.</p>
+                    <p><b>5. Advanced Persistent Threats (APTs):</b> Ye sophisticated cyber attacks hote hain jo lambe
+                        samay tak
+                        chhupke se chalte rehte hain aur silently data ko access karte hain.</p>
+
+                    <p><b>6. Zero-Day Exploits:</b> Yeh vulnerabilities hote hain jo software developers ne abhi tak
+                        patch nahi kiya
+                        hota, aur hackers in vulnerabilities ka fayda uthakar attack karte hain.</p>
+
+                    <p><b>7. Social Engineering Attacks:</b> Isme hackers users ko emotionally manipulate karke sensitive
+                        information
+                        nikal lete hain.</p>
+
+                    <p><b>8. Ransomware:</b> Ye ek tarah ka malware hai jo user ke data ko encrypt karke use access nahi
+                        karne deta
+                        hai, aur fir hackers ransom maangte hain data ko decrypt karne ke liye.</p>
+                    <p>In threats se bachne ke liye, humein apne systems ko regularly update karna, strong passwords ka
+                        istemal karna, antivirus software ka use karna, aur user education aur awareness badhana
+                        important hai. Isse hamare systems aur data ko secure rakhne mein madad milti hai.</p>
+                </div>
+                <h1 id="vulnerability">Overview of vulnerability</h1>
+                <div>
+                    <p>The vulnerability refers to a weak point, loophole in any system.
+                        vulnerabilities woh kamzoriyan hain ya flaws hain jo kisi system, network, ya application mein
+                        hoti hain, jinka exploitation cyber attacks ke liye ek potential entry point create karta
+                        hai.Any vulnerability can be an
+                        entry point for them to reach the target.
+                        Yeh kuch common vulnerabilities hote hain:
+                    </p>
+
+                    <p><b>1.Software Bugs:</b> Programming errors ya coding mistakes jo attackers ko unauthorized access dene ka mauka dete hain. In bugs ko exploit karke hackers system mein enter kar sakte hain.</p>
+                    <p><b>2. Weak Passwords:</b> Easy to guess ya poorly managed passwords jo unauthorized access ko facilitate karte hain. Strong passwords ka istemal na karna ek major vulnerability ho sakta hai.</p>
+                    <p><b>3. Outdated Software:</b> Software ya operating systems jo updated nahi hote, aur isse attackers ko vulnerabilities ka advantage milta hai. Regular updates se system ko secure rakhna important hai.</p>
+                    <p><b>4. Misconfigurations:</b> Galat network settings ya security configurations jo unauthorized access ko allow karte hain. Sahi taur par configure na kiya gaya system ek vulnerability ban sakta hai.</p>
+                    <p><b>5. Lack of Encryption:</b> Sensitive data ko encrypt nahi karna, jisse data interception ka risk badh jata hai. Encryption ki kami bhi ek vulnerability create karti hai.</p>
                 </div>
             </div>
         </section>
