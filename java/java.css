@@ -1,0 +1,10 @@
+table{
+    margin-top: 10px;
+}
+
+.tableDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto !important;
+}

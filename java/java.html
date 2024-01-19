@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <title>SemSyllabus</title>
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../cybersecruity/cyber.css">
+    <link rel="stylesheet" href="java.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @media only screen and (max-width:480px) {
+            .nav {
+                padding: 0px 0px 0px 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav_right"><img src="../assets/favicon.ico" alt="not found">
+                <h1><a href="../index.html">SemSyllabus</a></h1>
+            </div>
+            <div class="nav_left">
+                <div>
+                    <a class="anchorTag hometag" href="../index.html">Home</a>
+                    <!-- <a class="home-icon" href=""><i class="fa-solid fa-house"></i></a> -->
+                </div>
+                <a class="home-icon" href="../form/signup.html"><i class="fa-solid fa-user-plus"></i></a>
+                <button class="nav-btn nav-btn1"><a href="../form/loginform.html">Login</a></button>
+                <button class="nav-btn nav-btn2"><a href="../form/signup.html">Signup</a></button>
+            </div>
+            <div id="menu"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+    <div class="root-menu">
+        <div class="menu"><i class="fa-sharp fa-solid fa-circle-arrow-down"></i></div>
+    </div>
+    <section class="CyberSecurity">
+        <section class="sideContainer">
+            <div class="sideContainerRoot">
+                <h1 class="hover-trigger"><span>Overview of Java Programming</span><i
+                        class="fa-solid fa-chevron-down"></i></h1>
+                <div class="expandable-div">
+                    <ul type="">
+                        <li><a href="#Overview">Problem solving</a></li>
+                        <li><a href="#Importance">Problem definition</a></li>
+                        <li><a href="#Component">Program design</a></li>
+                        <li><a href="#Desktop_security">Debugging</a></li>
+                        <li><a href="#Desktop_security">Errors in program</a></li>
+                        <li><a href="#Desktop_security">documentation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sideContainerRoot">
+                <h1 class="hover-trigger"><span>Techniques of problem solving</span><i
+                        class="fa-solid fa-chevron-down"></i></h1>
+                <div class="expandable-div">
+                    <ul>
+                        <li><a href="#">Flowcharting</a></li>
+                        <li><a href="#">Decision table</a></li>
+                        <li><a href="#">Algorithms</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sideContainerRoot">
+                <h1 class="hover-trigger"><span>Threats to information system</span><i
+                        class="fa-solid fa-chevron-down"></i></h1>
+                <div class="expandable-div">
+                    <ul>
+                        <li><a href="#">External threat</a></li>
+                        <li><a href="#">Internal threat</a></li>
+                        <li><a href="#">security threat</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sideContainerRoot">
+                <h1 class="hover-trigger"><span>vulnerability-</span><i class="fa-solid fa-chevron-down"></i></h1>
+                <div class="expandable-div">
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Malware</a></li>
+                        <li><a href="#">Type of malware</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="mainContentContainer">
+            <div>
+                <h1>C++ vs Java</h1>
+                <div class="tableDiv">
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>Points</th>
+                                <th>C++</th>
+                                <th>Java</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>1. Performance</b></td>
+                                <td>C++ ek compiled language hai, jo ki machine code mein directly translate hoti hai,
+                                    isse execution time kam hota hai.</td>
+                                <td>Java ek interpreted language hai jiska matlab hai ki code bytecode mein hota hai,
+                                    aur phir JVM (Java Virtual Machine) usko interpret karta hai</td>
+                            </tr>
+                            <tr>
+                                <td><b>2. Memory Management</b></td>
+                                <td>C++ mein aapko memory manually allocate aur deallocate karni padti hai (using 'new'
+                                    aur 'delete').</td>
+                                <td>Java automatic garbage collection provide karta hai, iska matlab hai ki developer ko
+                                    memory management ke liye explicitly code likhne ki zarurat nahi hoti.</td>
+                            </tr>
+                            <tr>
+                                <td><b>3. Syntax</b></td>
+                                <td>C++ ki syntax complex ho sakti hai, especially beginners ke liye.</td>
+                                <td>Java ka syntax C++ se thoda sa simple hai</td>
+                            </tr>
+                            <tr>
+                                <td><b>4. Platform Independence </b></td>
+                                <td>C++ code ko specific platform ke liye compile karna padta hai, isliye ek platform
+                                    par likha gaya C++ code doosre platform par nahi chal sakta.</td>
+                                <td>Java platform-independent hai kyunki bytecode ko kisi bhi platform par chalaya ja
+                                    sakta hai, jabki C++ platform-dependent hoti hai.</td>
+                            </tr>
+                            <tr>
+                                <td><b>5. Use Cases </b></td>
+                                <td>C++ system-level programming, game development, aur performance-critical applications ke liye zyada use hoti hai.</td>
+                                <td>Java enterprise-level applications, web development, mobile applications, aur cross-platform development ke liye zyada use hoti hai.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+<script src="../cybersecruity/cyber.js"></script>
+
+</html>
