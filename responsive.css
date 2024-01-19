@@ -158,6 +158,14 @@
     .mainContentContainer h1{
         font-size: 29px;
     }
+    .tableDiv{
+        margin-right: 10px;
+    }
+    td{
+        width: 30vw;
+        font-size: 13px;
+        padding:10px;
+    }
     
 
 }
@@ -178,5 +186,9 @@
     }
     .mainContentContainer h1{
         font-size: 29px;
+    }
+    td{
+        width: 300px;
+        padding:10px;
     }
 }
