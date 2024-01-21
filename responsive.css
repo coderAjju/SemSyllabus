@@ -186,6 +186,7 @@
     }
     .mainContentContainer h1{
         font-size: 29px;
+        margin:10px 0;
     }
     td{
         width: 300px;
