@@ -46,8 +46,9 @@
     position: absolute;
     right:0;
     top:70px;
+    
 }
 
-.mainContentContainer h2{
+.mainContentContainer h2,.mainContentContainer h3,.mainContentContainer b{
     padding-left: 10px;
 }
