@@ -482,25 +482,280 @@
                     <h2>short:</h2>
                     <p>Short data type choti whole numbers ko store karta hai.<br>
                         Example: <code>short distance = 5000;</code></p>
-<br>
-<hr>
+                    <br>
+                    <hr>
+                    <div class="code-container">
+                        <span class="keyword">public</span> <span class="class">class</span> <span
+                            class="class">DataTypesExample</span> {<br>
+                        &nbsp;&nbsp;&nbsp;<span class="keyword">public</span> <span class="keyword">static</span> <span
+                            class="keyword">void</span> <span class="method">main</span>(<span
+                            class="keyword">String</span>[] args) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Primitive Data Types</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">byte</span> <span
+                            class="class">myByte</span> = <span class="braces">127</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">short</span> <span
+                            class="class">myShort</span> = <span class="braces">32767</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> <span
+                            class="class">myInt</span> = <span class="braces">2147483647</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">long</span> <span
+                            class="class">myLong</span> = <span class="braces">9223372036854775807L</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">float</span> <span
+                            class="class">myFloat</span> = <span class="braces">3.14f</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">double</span> <span
+                            class="class">myDouble</span> = <span class="braces">3.14</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">char</span> <span
+                            class="class">myChar</span> = <span class="braces">'A'</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">boolean</span> <span
+                            class="class">myBoolean</span> = <span class="braces">true</span>;<br>
+                        &nbsp;&nbsp;&nbsp;}
+                        }
+                    </div>
+                    <br>
+                    <hr>
+                </div>
+                <h1 id="typecasting">Type Casting</h1>
+                <div>
+                    <p><b>1. Implicit Casting(Widening): </b>
+                        Implicit Casting mein programmer kisi variable ke type ko change nhi karta hai.Wo automatically
+                        hota hai program mein.
+                    </p>
+                    <div class="code-container">
+                        <span class="keyword">int</span> <span class="class">numInt</span> = <span
+                            class="braces">100</span>;<br>
+                        <span class="keyword">double</span> <span class="class">numDouble</span> = <span
+                            class="class">numInt</span>; <span class="comment">// Implicit casting use</span>
+                    </div>
+                    <p><b>2. Explicity Casting(Narrowing): </b>
+                        Explicit Casting ya Narrowing mein programmer apne hisaab se variable ke type ko change karta
+                        hai.
+                    </p>
+                    <div class="code-container">
+                        <span class="keyword">double</span> <span class="class">numDouble</span> = <span
+                            class="braces">55.67</span>;<br>
+                        <span class="keyword">int</span> <span class="class">numInt</span> = (<span
+                            class="keyword">int</span>) <span class="class">numDouble</span>; <span class="comment">//
+                            Explicit casting</span>
+                    </div>
+                </div>
+                <h1 id="operator">Operator</h1>
+                <div>
+                    <p>Operator do ya do se jyada operands ke beech mein mathematical operation perform karne ke liye
+                        use kiye jata hain.Eske kayi type hote hain hum ek ek karke sabke baarein mein padhenge</p>
+                    <p>
+                        <b>1. Arithmetic Operators: </b>
+                        They are used to perform simple arithmetic operations on primitive data types.
+                    <pre>
+            * : Multiplication
+            / : Division
+            % : Modulo
+            + : Addition
+            – : Subtraction
+                        </pre>
+                    <div class="code-container">
+                        <span class="comment">// Arithmetic Operators</span><br>
+                        <span class="keyword">class</span> <span class="class">ArithOps</span> {<br>
+                        &nbsp;&nbsp;&nbsp;<span class="comment">// Main Function</span><br>
+                        &nbsp;&nbsp;<span class="keyword">public</span> <span class="keyword">static</span> <span
+                            class="keyword">void</span> <span class="method">main</span>(<span
+                            class="keyword">String</span>[] args) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Arithmetic operators</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> a = <span
+                            class="braces">10</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> b = <span
+                            class="braces">3</span>;<br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span class="braces">"a + b =
+                            "</span> + (a + b));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span class="braces">"a - b =
+                            "</span> + (a - b));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span class="braces">"a * b =
+                            "</span> + (a * b));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span class="braces">"a / b =
+                            "</span> + (a / b));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span class="braces">"a % b =
+                            "</span> + (a % b));<br>
+                        &nbsp;&nbsp;&nbsp;}<br>
+                        }
+                    </div>
+                    </p>
+                    <p>
+                        <b>2. Unary Operators: </b>
+                        Unary Operatos kewal single operand ke saath calculation perform karte hain.
+                    <pre>
+             Suppose I have a variable 'i'
+             1. Post increment operator (i++) :- Eska matlab value pahle initialize hogi phir increment hogi.
+                         i++ ko hum i = i + 1 ke form mein samjh sakte hain;
+             2. Pre increment operator (++i) :- Eska matlab value pahle increment hogi phir initialize hogi
+                         ++i ko hum i = i + 1 ke form mein samjh sakte hain;
+             3. Post decrement operator (i--) :- Eska matlab value pahle initialize hogi phir decrement hogi.
+                         i-- ko hum i = i - 1 ke form mein samjh sakte hain;   
+             4. Pre decrement operator (++i) :- Eska matlab value pahle increment hogi phir initialize hogi
+                         --i ko hum i = i + 1 ke form mein samjh sakte hain;
+                        </pre>
+                    <div class="code-container">
+                        <span class="comment">// Unary Operators</span><br>
+                        <span class="keyword">class</span> <span class="class">UnaryOps</span> {<br>
+                        &nbsp;&nbsp;&nbsp;<span class="comment">// main function</span><br>
+                        &nbsp;&nbsp;<span class="keyword">public</span> <span class="keyword">static</span> <span
+                            class="keyword">void</span> <span class="method">main</span>(<span
+                            class="keyword">String</span>[] args)<br>
+                        &nbsp;&nbsp;{<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Integer declared</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> a = <span
+                            class="braces">10</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> b = <span
+                            class="braces">10</span>;<br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Using unary operators</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span
+                            class="braces">"Postincrement : "</span> + (a++));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span
+                            class="braces">"Preincrement : "</span> + (++a));<br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span
+                            class="braces">"Postdecrement : "</span> + (b--));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span
+                            class="braces">"Predecrement : "</span> + (--b));<br>
+                        &nbsp;&nbsp;}<br>
+                        }
+                    </div>
+                    </p>
+                    <p>
+                        <b>3. Assignment Operator: </b>
+                        ‘=’ Assignment operator ka istemal kisi bhi variable ko ek value assign karne ke liye hota hai.
+                        Iska right-to-left associativity hota hai."
+                    <pre>
+            1. = :- Es operator ka use hum kisi bhi value ko kisi variable mein assign karne ke liye karte hain.
+            such as <b>int i = 5;</b>
+            2. += :- Es operator ko aap es tarah samjh sakte hai. <b>i = i + 1;</b>  
+            3. -= :- Es operator ko aap es tarah samjh sakte hai. <b>i = i - 1;</b>
+            4. *= :- Es operator ko aap es tarah samjh sakte hai. <b>i = i * 1;</b>
+            5. /= :- Es operator ko aap es tarah samjh sakte hai. <b>i = i / 1;</b>
+            6. %= :- Es operator ko aap es tarah samjh sakte hai. <b>i = i % 1;</b> 
+                        </pre>
+                    <div class="code-container">
+                        <span class="comment">// Assignment Operators</span><br>
+                        <span class="keyword">class</span> <span class="class">AssignOps</span>{<br>
+                        &nbsp;&nbsp;&nbsp;<span class="comment">// main function</span><br>
+                        &nbsp;&nbsp;<span class="keyword">public</span> <span class="keyword">static</span> <span
+                            class="keyword">void</span> <span class="method">main</span>(<span
+                            class="keyword">String</span>[] args)<br>
+                        &nbsp;&nbsp;{<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> f = <span
+                            class="braces">7</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span class="braces">"f += 3:
+                            "</span> + (f += 3));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span class="braces">"f -= 2:
+                            "</span> + (f -= 2));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span class="braces">"f *= 4:
+                            "</span> + (f *= 4));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span class="braces">"f /= 3:
+                            "</span> + (f /= 3));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span class="braces">"f %= 2:
+                            "</span> + (f %= 2));<br>
+                        &nbsp;&nbsp;}<br>
+                        }
+                    </div>
+
+                    </p>
+                    <p>
+                        <b>4. Comparison Operator: </b>
+                        Yeh operators relations jaise ki equality, greater than, aur less than check karne ke liye
+                        istemal hote hain. Ye comparison ke baad boolean results return karte hain aur extensively
+                        looping statements mein bhi use hote hain sath hi conditional if-else statements mein bhi.
+                    <pre>
+             1. == :- <b>Equal to</b>
+             2. <= :- <b>Less than or equal to</b>
+             3. >= :- <b>Greater than or equal to</b>
+             4. <   :- <b>Greater than</b>
+             5. >   :- <b>Less than</b>
+             6. != :- <b>Not equal to</b>
+</pre>
+                    </p>
+                    <div class="code-container">
+                        <span class="comment">// Relational Operator</span><br>
+                        <span class="keyword">class</span> <span class="class">relOps</span> {<br>
+                        &nbsp;&nbsp;<span class="comment">// main function</span><br>
+                        &nbsp;&nbsp;<span class="keyword">public</span> <span class="keyword">static</span> <span
+                            class="keyword">void</span> <span class="method">main</span>(<span
+                            class="keyword">String</span>[] args)<br>
+                        &nbsp;&nbsp;{<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Comparison operators</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> a = <span class="braces">10</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> b = <span class="braces">3</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> c = <span class="braces">5</span>;<br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"a &gt; b: "</span> + (a &gt; b));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"a &lt; b: "</span> + (a &lt; b));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"a &gt;= b: "</span> + (a &gt;= b));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"a &lt;= b: "</span> + (a &lt;= b));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"a == c: "</span> + (a == c));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"a != c: "</span> + (a != c));<br>
+                        &nbsp;&nbsp;}<br>
+                        }
+                    </div>
+                    <p>
+                        <b>5. Logical Operators: </b>
+                        Logical operators ka istemaal “logical AND” and “logical OR” operations ke liye hota hai.
+                    <pre>
+          <b>&&, Logical AND:</b> returns true when both conditions are true.
+          <b>||, Logical OR:</b> returns true if at least one condition is true.
+          <b>!, Logical NOT:</b> returns true when a condition is false and vice-versa
+                        </pre>
                         <div class="code-container">
-                            <span class="keyword">public</span> <span class="class">class</span> <span class="class">DataTypesExample</span> {<br>
-                            &nbsp;&nbsp;&nbsp;<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="method">main</span>(<span class="keyword">String</span>[] args) {<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Primitive Data Types</span><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">byte</span> <span class="class">myByte</span> = <span class="braces">127</span>;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">short</span> <span class="class">myShort</span> = <span class="braces">32767</span>;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">int</span> <span class="class">myInt</span> = <span class="braces">2147483647</span>;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">long</span> <span class="class">myLong</span> = <span class="braces">9223372036854775807L</span>;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">float</span> <span class="class">myFloat</span> = <span class="braces">3.14f</span>;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">double</span> <span class="class">myDouble</span> = <span class="braces">3.14</span>;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">char</span> <span class="class">myChar</span> = <span class="braces">'A'</span>;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">boolean</span> <span class="class">myBoolean</span> = <span class="braces">true</span>;<br>
-                            &nbsp;&nbsp;&nbsp;}
+                            <span class="comment">// Logical Operator</span><br>
+                            <span class="keyword">class</span> <span class="class">relOps</span> {<br>
+                            &nbsp;&nbsp;<span class="comment">// main function</span><br>
+                            &nbsp;&nbsp;<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="method">main</span>(<span class="keyword">String</span>[] args)<br>
+                            &nbsp;&nbsp;{<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Logical operators</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">boolean</span> x = <span class="braces">true</span>;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">boolean</span> y = <span class="braces">false</span>;<br>
+                            <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span class="method">println</span>(<span class="braces">"x &amp;&amp; y: "</span> + (x &amp;&amp; y));<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span class="method">println</span>(<span class="braces">"x || y: "</span> + (x || y));<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span class="method">println</span>(<span class="braces">"!x: "</span> + (!x));<br>
+                            &nbsp;&nbsp;}<br>
                             }
                         </div>
-                        <br>
-                    <hr>
+                        
+                    </p>
+                </div>
+                <h1 id="expression">Expressions & Their Evaluation: </h1>
+                <div>
+                    <p><b>Expression:</b> Ek expression ek combination hoti hai operands (values) aur operators ka jo ek value produce karti hai.
+                    </p>
+                    <div class="code-container">
+                        <span class="keyword">int</span> <span class="class">result</span> = <span class="braces">5</span> + <span class="braces">3</span>; <span class="comment">// Yahaan, 5 + 3 ek expression hai jo 8 dega.</span>
+                    </div>
+                    <p>
+                        <b>Evaluation: </b>Expression ka evaluation uss expression ko solve karke uski final value nikalna hai.
+                    </p> 
+                    <div class="code-container">
+                        <span class="keyword">int</span> <span class="class">x</span> = <span class="braces">10</span>;<br>
+                        <span class="keyword">int</span> <span class="class">y</span> = <span class="class">x</span> * <span class="braces">2</span>; <span class="comment">// Yahaan, expression x * 2 evaluate hokar y ko 20 dega.</span>
+                    </div>
+                                       
                 </div>
             </div>
         </section>
