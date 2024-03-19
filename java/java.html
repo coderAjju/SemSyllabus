@@ -722,40 +722,201 @@
           <b>||, Logical OR:</b> returns true if at least one condition is true.
           <b>!, Logical NOT:</b> returns true when a condition is false and vice-versa
                         </pre>
-                        <div class="code-container">
-                            <span class="comment">// Logical Operator</span><br>
-                            <span class="keyword">class</span> <span class="class">relOps</span> {<br>
-                            &nbsp;&nbsp;<span class="comment">// main function</span><br>
-                            &nbsp;&nbsp;<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="method">main</span>(<span class="keyword">String</span>[] args)<br>
-                            &nbsp;&nbsp;{<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Logical operators</span><br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">boolean</span> x = <span class="braces">true</span>;<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">boolean</span> y = <span class="braces">false</span>;<br>
-                            <br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span class="method">println</span>(<span class="braces">"x &amp;&amp; y: "</span> + (x &amp;&amp; y));<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span class="method">println</span>(<span class="braces">"x || y: "</span> + (x || y));<br>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span class="method">println</span>(<span class="braces">"!x: "</span> + (!x));<br>
-                            &nbsp;&nbsp;}<br>
-                            }
-                        </div>
-                        
+                    <div class="code-container">
+                        <span class="comment">// Logical Operator</span><br>
+                        <span class="keyword">class</span> <span class="class">relOps</span> {<br>
+                        &nbsp;&nbsp;<span class="comment">// main function</span><br>
+                        &nbsp;&nbsp;<span class="keyword">public</span> <span class="keyword">static</span> <span
+                            class="keyword">void</span> <span class="method">main</span>(<span
+                            class="keyword">String</span>[] args)<br>
+                        &nbsp;&nbsp;{<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Logical operators</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">boolean</span> x = <span
+                            class="braces">true</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">boolean</span> y = <span
+                            class="braces">false</span>;<br>
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"x &amp;&amp; y: "</span> + (x &amp;&amp;
+                        y));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"x || y: "</span> + (x || y));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"!x: "</span> + (!x));<br>
+                        &nbsp;&nbsp;}<br>
+                        }
+                    </div>
+
                     </p>
                 </div>
                 <h1 id="expression">Expressions & Their Evaluation: </h1>
                 <div>
-                    <p><b>Expression:</b> Ek expression ek combination hoti hai operands (values) aur operators ka jo ek value produce karti hai.
+                    <p><b>Expression:</b> Ek expression ek combination hoti hai operands (values) aur operators ka jo ek
+                        value produce karti hai.
                     </p>
                     <div class="code-container">
-                        <span class="keyword">int</span> <span class="class">result</span> = <span class="braces">5</span> + <span class="braces">3</span>; <span class="comment">// Yahaan, 5 + 3 ek expression hai jo 8 dega.</span>
+                        <span class="keyword">int</span> <span class="class">result</span> = <span
+                            class="braces">5</span> + <span class="braces">3</span>; <span class="comment">// Yahaan, 5
+                            + 3 ek expression hai jo 8 dega.</span>
                     </div>
                     <p>
-                        <b>Evaluation: </b>Expression ka evaluation uss expression ko solve karke uski final value nikalna hai.
-                    </p> 
+                        <b>Evaluation: </b>Expression ka evaluation uss expression ko solve karke uski final value
+                        nikalna hai.
+                    </p>
                     <div class="code-container">
-                        <span class="keyword">int</span> <span class="class">x</span> = <span class="braces">10</span>;<br>
-                        <span class="keyword">int</span> <span class="class">y</span> = <span class="class">x</span> * <span class="braces">2</span>; <span class="comment">// Yahaan, expression x * 2 evaluate hokar y ko 20 dega.</span>
+                        <span class="keyword">int</span> <span class="class">x</span> = <span
+                            class="braces">10</span>;<br>
+                        <span class="keyword">int</span> <span class="class">y</span> = <span class="class">x</span> *
+                        <span class="braces">2</span>; <span class="comment">// Yahaan, expression x * 2 evaluate hokar
+                            y ko 20 dega.</span>
                     </div>
-                                       
+
+                </div>
+                <h1>Decision making</h1>
+                <div>
+                    <p><b>1. If-Else Statement: </b>If-Else ka use hota hai jab aapko kisi condition ke basis par kuch
+                        execute karna ho.</p>
+                    <div class="code-container">
+                        <span class="keyword">int</span> <span class="class">age</span> = <span
+                            class="braces">18</span>;<br>
+                        <span class="keyword">if</span> (<span class="class">age</span> &gt;= <span
+                            class="braces">18</span>) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"You can vote!"</span>); <span
+                            class="comment">// Agar age 18 ya usse zyada hai, toh yeh print hoga.</span><br>
+                        <span class="keyword">}</span> <span class="keyword">else</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"You are not eligible to vote."</span>);
+                        <span class="comment">// Warna yeh print hoga.</span><br>
+                        }
+                    </div>
+                    <p><b>2. else-if statement: </b>Use the else if statement to specify a new condition if the first
+                        condition is false.
+                    </p>
+                    <div class="code-container">
+                        <span class="keyword">int</span> <span class="class">num</span> = <span
+                            class="braces">10</span>;<br>
+                        <span class="keyword">if</span> (<span class="class">num</span> &gt; <span
+                            class="braces">10</span>) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"Number is greater than 10"</span>);<br>
+                        <span class="keyword">}</span> <span class="keyword">else</span> <span class="keyword">if</span>
+                        (<span class="class">num</span> &lt; <span class="braces">10</span>) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"Number is less than 10"</span>);<br>
+                        <span class="keyword">}</span> <span class="keyword">else</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"Number is equal to 10"</span>);<br>
+                        }
+                    </div>
+
+                </div>
+                <h1>Branching</h1>
+                <div>
+                    <p><b>Switch Statements: </b> Switch ka use hota hai jab aapko ek variable ke alag-alag values ke
+                        basis par alag-alag cases ko handle karna ho.
+                    </p>
+                    <div class="code-container">
+                        <span class="keyword">int</span> <span class="class">day</span> = <span
+                            class="braces">2</span>;<br>
+                        <span class="keyword">switch</span> (<span class="class">day</span>) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">case</span> <span class="braces">1</span>:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span
+                            class="braces">"Sunday"</span>);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">case</span> <span class="braces">2</span>:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span
+                            class="braces">"Monday"</span>);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>;<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// ... other cases</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">default</span>:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span class="braces">"Invalid
+                            day"</span>);<br>
+                        }
+                    </div>
+                </div>
+                <h1>Loops</h1>
+                <div>
+                    <p><b>1. For loop: </b> For loop ka use tab hota hai jab aapko ek fixed number of iterations mein
+                        kuch execute karna ho.</p>
+                    <div class="code-container">
+                        <span class="keyword">for</span> (<span class="keyword">int</span> <span class="class">i</span>
+                        = <span class="braces">1</span>; <span class="class">i</span> &lt;= <span
+                            class="braces">5</span>; <span class="class">i</span>++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"Iteration: "</span> + <span
+                            class="class">i</span>);<br>
+                        }
+                    </div>
+                    <p><b>2. While loop: </b>While loop ka use tab hota hai jab aapko ek condition ke basis par kuch
+                        execute karna ho.</p>
+                    <div class="code-container">
+                        <span class="keyword">int</span> <span class="class">count</span> = <span
+                            class="braces">0</span>;<br>
+                        <span class="keyword">while</span> (<span class="class">count</span> &lt; <span
+                            class="braces">5</span>) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"Count: "</span> + <span
+                            class="class">count</span>);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">count</span>++;<br>
+                        }
+                    </div>
+                    <p><b>3. Do-while loop: </b>Do-While loop bhi ek condition based loop hai, lekin yeh loop ke body ko
+                        kam se kam ek baar toh execute karega.</p>
+                    <div class="code-container">
+                        <span class="keyword">int</span> <span class="class">num</span> = <span
+                            class="braces">1</span>;<br>
+                        <span class="keyword">do</span> {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"Number: "</span> + <span
+                            class="class">num</span>);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">num</span>++;<br>
+                        } <span class="keyword">while</span> (<span class="class">num</span> &lt;= <span
+                            class="braces">5</span>);<br>
+                    </div>
+
+                </div>
+                <h1>Jumps in loops</h1>
+                <div>
+                    <p><b>1. Break statement: </b>Break statement ka use loop ke execution ko turant terminate karne ke liye hota hai.</p>
+                    <div class="code-container">
+                        <span class="keyword">for</span> (<span class="keyword">int</span> <span class="class">i</span> = <span class="braces">1</span>; <span class="class">i</span> &lt;= <span class="braces">10</span>; <span class="class">i</span>++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> (<span class="class">i</span> == <span class="braces">5</span>) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>; <span class="comment">// Loop ko yahaan se bahar karega agar i 5 ho gaya.</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span class="method">println</span>(<span class="braces">"Iteration: "</span> + <span class="class">i</span>);<br>
+                        }
+                    </div>
+                    <p><b>2. Continue Statement: </b> Continue statement ka use loop ke current iteration ko chhodkar agle iteration se shuru karne ke liye hota hai.</p>
+                    <div class="code-container">
+                        <span class="keyword">for</span> (<span class="keyword">int</span> <span class="class">i</span> = <span class="braces">1</span>; <span class="class">i</span> &lt;= <span class="braces">5</span>; <span class="class">i</span>++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> (<span class="class">i</span> == <span class="braces">3</span>) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">continue</span>; <span class="comment">// Isse yeh hoga ki i ki value 3 par loop chhodkar agla iteration shuru hoga.</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span class="method">println</span>(<span class="braces">"Iteration: "</span> + <span class="class">i</span>);<br>
+                        }
+                    </div>
+                    
+                </div>
+                <h1>Labled loop</h1>
+                <div>
+                    <p><b>Labeled Loop: </b> Java mein aap ek loop ko label dekar identify kar sakte ho. Yeh kisi loop ko specify karne mein help karta hai, especially nested loops ke case mein.</p>
+                    <div class="code-container">
+                        <span class="label">outerLoop:</span><br>
+                        <span class="keyword">for</span> (<span class="keyword">int</span> <span class="class">i</span> = <span class="braces">1</span>; <span class="class">i</span> &lt;= <span class="braces">3</span>; <span class="class">i</span>++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">innerLoop:</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span> (<span class="keyword">int</span> <span class="class">j</span> = <span class="braces">1</span>; <span class="class">j</span> &lt;= <span class="braces">3</span>; <span class="class">j</span>++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> (<span class="class">i</span> * <span class="class">j</span> &gt; <span class="braces">4</span>) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span> <span class="label">outerLoop;</span> <span class="comment">// outerLoop se bahar nikal jaayega agar i*j &gt; 4.</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span class="method">println</span>(<span class="braces">"i * j: "</span> + (<span class="class">i</span> * <span class="class">j</span>));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                        }
+                    </div>
+                    
                 </div>
             </div>
         </section>
