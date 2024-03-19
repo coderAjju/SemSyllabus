@@ -91,6 +91,69 @@
                         <li>
                             <a href="#" data-target="datatypeinjava">Datatype</a>
                         </li>
+                        <li>
+                            <a href="#" data-target="typecasting">Type Casting</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="operator">Operator</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="expression">Expression & Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="decisionMaking">Decisiion Making</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="branching">Branching</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="loops">Loops</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="jumpinloop">Jumps in loops</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="labledloop">Labled loop</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sideContainerRoot">
+                <h1 class="hover-trigger">
+                    <span>Class in Java</span><i class="fa-solid fa-chevron-down"></i>
+                </h1>
+                <div class="expandable-div">
+                    <ul type="">
+                        <li>
+                            <a href="#" data-target="con_var"></a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="datatypeinjava">Datatype</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="typecasting">Type Casting</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="operator">Operator</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="expression">Expression & Evaluation</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="decisionMaking">Decisiion Making</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="branching">Branching</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="loops">Loops</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="jumpinloop">Jumps in loops</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="labledloop">Labled loop</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -772,7 +835,7 @@
                     </div>
 
                 </div>
-                <h1>Decision making</h1>
+                <h1 id="decisionMaking">Decision making</h1>
                 <div>
                     <p><b>1. If-Else Statement: </b>If-Else ka use hota hai jab aapko kisi condition ke basis par kuch
                         execute karna ho.</p>
@@ -811,7 +874,7 @@
                     </div>
 
                 </div>
-                <h1>Branching</h1>
+                <h1 id="branching">Branching</h1>
                 <div>
                     <p><b>Switch Statements: </b> Switch ka use hota hai jab aapko ek variable ke alag-alag values ke
                         basis par alag-alag cases ko handle karna ho.
@@ -838,7 +901,7 @@
                         }
                     </div>
                 </div>
-                <h1>Loops</h1>
+                <h1 id="loops">Loops</h1>
                 <div>
                     <p><b>1. For loop: </b> For loop ka use tab hota hai jab aapko ek fixed number of iterations mein
                         kuch execute karna ho.</p>
@@ -879,44 +942,129 @@
                     </div>
 
                 </div>
-                <h1>Jumps in loops</h1>
+                <h1 id="jumpinloop">Jumps in loops</h1>
                 <div>
-                    <p><b>1. Break statement: </b>Break statement ka use loop ke execution ko turant terminate karne ke liye hota hai.</p>
+                    <p><b>1. Break statement: </b>Break statement ka use loop ke execution ko turant terminate karne ke
+                        liye hota hai.</p>
                     <div class="code-container">
-                        <span class="keyword">for</span> (<span class="keyword">int</span> <span class="class">i</span> = <span class="braces">1</span>; <span class="class">i</span> &lt;= <span class="braces">10</span>; <span class="class">i</span>++) {<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> (<span class="class">i</span> == <span class="braces">5</span>) {<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>; <span class="comment">// Loop ko yahaan se bahar karega agar i 5 ho gaya.</span><br>
+                        <span class="keyword">for</span> (<span class="keyword">int</span> <span class="class">i</span>
+                        = <span class="braces">1</span>; <span class="class">i</span> &lt;= <span
+                            class="braces">10</span>; <span class="class">i</span>++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> (<span class="class">i</span> == <span
+                            class="braces">5</span>) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span>; <span
+                            class="comment">// Loop ko yahaan se bahar karega agar i 5 ho gaya.</span><br>
                         &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span class="method">println</span>(<span class="braces">"Iteration: "</span> + <span class="class">i</span>);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"Iteration: "</span> + <span
+                            class="class">i</span>);<br>
                         }
                     </div>
-                    <p><b>2. Continue Statement: </b> Continue statement ka use loop ke current iteration ko chhodkar agle iteration se shuru karne ke liye hota hai.</p>
+                    <p><b>2. Continue Statement: </b> Continue statement ka use loop ke current iteration ko chhodkar
+                        agle iteration se shuru karne ke liye hota hai.</p>
                     <div class="code-container">
-                        <span class="keyword">for</span> (<span class="keyword">int</span> <span class="class">i</span> = <span class="braces">1</span>; <span class="class">i</span> &lt;= <span class="braces">5</span>; <span class="class">i</span>++) {<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> (<span class="class">i</span> == <span class="braces">3</span>) {<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">continue</span>; <span class="comment">// Isse yeh hoga ki i ki value 3 par loop chhodkar agla iteration shuru hoga.</span><br>
+                        <span class="keyword">for</span> (<span class="keyword">int</span> <span class="class">i</span>
+                        = <span class="braces">1</span>; <span class="class">i</span> &lt;= <span
+                            class="braces">5</span>; <span class="class">i</span>++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> (<span class="class">i</span> == <span
+                            class="braces">3</span>) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">continue</span>; <span
+                            class="comment">// Isse yeh hoga ki i ki value 3 par loop chhodkar agla iteration shuru
+                            hoga.</span><br>
                         &nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span class="method">println</span>(<span class="braces">"Iteration: "</span> + <span class="class">i</span>);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"Iteration: "</span> + <span
+                            class="class">i</span>);<br>
                         }
                     </div>
-                    
+
                 </div>
-                <h1>Labled loop</h1>
+                <h1 id="labledloop">Labled loop</h1>
                 <div>
-                    <p><b>Labeled Loop: </b> Java mein aap ek loop ko label dekar identify kar sakte ho. Yeh kisi loop ko specify karne mein help karta hai, especially nested loops ke case mein.</p>
+                    <p><b>Labeled Loop: </b> Java mein aap ek loop ko label dekar identify kar sakte ho. Yeh kisi loop
+                        ko specify karne mein help karta hai, especially nested loops ke case mein.</p>
                     <div class="code-container">
                         <span class="label">outerLoop:</span><br>
-                        <span class="keyword">for</span> (<span class="keyword">int</span> <span class="class">i</span> = <span class="braces">1</span>; <span class="class">i</span> &lt;= <span class="braces">3</span>; <span class="class">i</span>++) {<br>
+                        <span class="keyword">for</span> (<span class="keyword">int</span> <span class="class">i</span>
+                        = <span class="braces">1</span>; <span class="class">i</span> &lt;= <span
+                            class="braces">3</span>; <span class="class">i</span>++) {<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;<span class="label">innerLoop:</span><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span> (<span class="keyword">int</span> <span class="class">j</span> = <span class="braces">1</span>; <span class="class">j</span> &lt;= <span class="braces">3</span>; <span class="class">j</span>++) {<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> (<span class="class">i</span> * <span class="class">j</span> &gt; <span class="braces">4</span>) {<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">break</span> <span class="label">outerLoop;</span> <span class="comment">// outerLoop se bahar nikal jaayega agar i*j &gt; 4.</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">for</span> (<span class="keyword">int</span> <span
+                            class="class">j</span> = <span class="braces">1</span>; <span class="class">j</span> &lt;=
+                        <span class="braces">3</span>; <span class="class">j</span>++) {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> (<span
+                            class="class">i</span> * <span class="class">j</span> &gt; <span class="braces">4</span>)
+                        {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                            class="keyword">break</span> <span class="label">outerLoop;</span> <span class="comment">//
+                            outerLoop se bahar nikal jaayega agar i*j &gt; 4.</span><br>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span class="method">println</span>(<span class="braces">"i * j: "</span> + (<span class="class">i</span> * <span class="class">j</span>));<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span
+                            class="method">out</span>.<span class="method">println</span>(<span class="braces">"i * j:
+                            "</span> + (<span class="class">i</span> * <span class="class">j</span>));<br>
                         &nbsp;&nbsp;&nbsp;&nbsp;}<br>
                         }
                     </div>
-                    
+
+                </div>
+                <h1>Class Definition</h1>
+                <div>
+                    <p>Class ek blueprint hota hai jo ek particular type ke objects ko represent karta hai. Har ek
+                        object ek class ka instance hota hai.Class memory mein koi space nhi leta hain.</p>
+                    <p><b>1. Class variable: </b> Variables class ke attributes ko represent karte hain. Inko class ke
+                        andar define kiya jata
+                        hai aur har object ke liye alag-alag values hold karte hain.</p>
+                    <p><b>2. Class method: </b> Methods class ke behavior ko define karte hain. Ye functions hote hain
+                        jo class ke sath
+                        related operations perform karte hain.</p>
+                    <div class="code-container">
+                        <span class="comment">// Class Definition (Class ki Paribhasha)</span><br>
+                        <span class="keyword">class</span> <span class="class">Car</span> {<br>
+                        &nbsp;&nbsp;<span class="comment">// Variables (Variables)</span><br>
+                        &nbsp;&nbsp;<span class="keyword">String</span> <span class="class">brand</span>;<br>
+                        &nbsp;&nbsp;<span class="keyword">int</span> <span class="class">year</span>;<br>
+                        <br>
+                        &nbsp;&nbsp;<span class="comment">// Methods (Methods)</span><br>
+                        &nbsp;&nbsp;<span class="keyword">void</span> <span class="method">displayInfo</span>() {<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"Brand: "</span> + <span
+                            class="class">brand</span>);<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="class">System</span>.<span class="method">out</span>.<span
+                            class="method">println</span>(<span class="braces">"Year: "</span> + <span
+                            class="class">year</span>);<br>
+                        &nbsp;&nbsp;}<br>
+                        }
+                        <br>
+                        <span class="keyword">public</span> <span class="keyword">class</span> <span class="class">Main</span> {<br>
+                            &nbsp;&nbsp;&nbsp;<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="method">main</span>(<span class="keyword">String</span>[] args) {<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Creating object of class Car (Class Car ka object banane)</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="class">Car</span> myCar = <span class="keyword">new</span> <span class="class">Car</span>();<br><br>
+                            
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Setting values of variables (Variables ki values set karne)</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myCar.brand = <span class="braces">"Toyota"</span>;<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myCar.year = <span class="braces">2020</span>;<br><br>
+                            
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">// Calling method to display car info (Method ko call karke car ki jaankari ko display karne)</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;myCar.displayInfo();<br>
+                            &nbsp;&nbsp;&nbsp;}<br>
+                            }
+                    </div>
+                    <b>Explanation: </b>
+                    <ul style="margin-left: 30px;">
+                        <li><b>Car</b> ek class hai jo car objects ko represent karega.</li>
+                        <li><b>brand</b> ek String type ka variable hai jo car ki brand ko store karega.</li>
+                        <li><b>year</b> ek integer type ka variable hai jo car ka manufacturing year store karega.</li>
+                        <li><b>displayInfo()</b> ek method hai jo car ke details ko print karega.</li>
+                        <li><b>myCar</b> ek object hai<b>car</b> class ka.</li>
+                    </ul>
+                </div>
+                <h1>Object</h1>
+                <div>
+                    <p>Objects class ke instances hote hain. Jab aap ek class ke object create karte hain, toh aapko us object ke liye memory allocate hoti hai aur wo object class ke sabhi members (variables aur methods) ko access kar sakta hai.Upper ke code mein maie <b>car</b> class ka use karke <b>myCar</b> object create kiya.</p>
+                </div>  
+                <h1>Accessing Class Members</h1>
+                <div>
+                    <p>Class ke members ko access karne ke liye aapko object ka istemal karna hota hai. Aap . operator ka istemal karke object ke naam ke baad class ke members ko access kar sakte hain.Upper ke code mein humne <b>car</b> class ke member(property aur method) ko access kiya hai.</p>
                 </div>
             </div>
         </section>
